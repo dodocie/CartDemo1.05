@@ -1,0 +1,161 @@
+/*CSS DOCUMENT */
+
+/*修改input type = number 的默认样式*/
+input[type=number] {
+    -moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#container .welcome_msg{
+    font:bold 20px sans-serif;
+    width: 98%;
+    margin: 20px auto 0;
+}
+.cart{
+    width: 100%;
+}
+.cart ul{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    text-align: center;
+    width: 98%;
+    height: 120px;
+    margin: 10px auto;
+}
+.cart ul li{
+    flex:1;
+}
+.cart ul li:nth-child(2){
+    flex:3;
+}
+.cart ul li:nth-child(2) img{
+    width: 120px;
+    max-width: 30%;
+    display: block;
+    margin-right: 8px;
+    float: left;
+}
+.cart ul li blockquote{
+    float: left;
+    width: 60%;
+}
+.cart ul li:nth-child(2) p{
+    font-size: 16px;
+    text-align: left;
+    line-height: 36px;
+}
+.cart ul li blockquote span{
+    font-size: 14px;
+    text-align: left;
+    display: block;
+    color: #6c6969;
+}
+.cart ul li input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.cart ul li input[type=number]{
+    width: 35px;
+    height: 20px;
+    text-align: center;
+}
+.cart button{
+    width: 20px;
+}
+
+.cart_title ul li{
+    height: 50px;
+    line-height: 50px;
+    background-color: #d50000;
+}
+.cart_title ul li{
+    color: #fff;
+}
+
+.cart_total {
+    width: 98%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
+.cart_total p, .cart_total a{
+    width: calc(98%/7);
+    text-align: center;
+}
+.cart_total a{
+    background-color: #d50000;
+    color: #fff;
+    font-weight: bold;
+    /*border: none;*/
+    height: 36px;
+    line-height: 36px;
+}
+a.disabled{
+    background: #adadad;
+    cursor: not-allowed;
+}
+.delete_confirm{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 998;
+    background: rgba(173, 173, 173, 0.62);
+}
+.delete_show{
+    /*display: none;*/
+}
+.delete_confirm ul{
+    border: 1px solid #aeaeae;
+    padding: 20px 20px 20px 30px;
+    background: #fff;
+    position: absolute;
+    margin: auto;
+    top:0;bottom: 0;
+    left: 0; right: 0;
+    z-index: 999;
+    width: 350px;
+    height: 120px;
+}
+.delete_confirm ul li p{
+    font-size: 16px;
+    color: #3c3c3c;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.dialog_btn {
+    border: 1px solid #d9d9d9;
+    color: #3c3c3c;
+    width: 58px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 1px;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 700;
+}
+.delete_confirm ul li:nth-last-child(1){
+    margin-top: 20px;
+}
+.dialog_btn_cxl {
+    border-color: #F44336;
+    background: #F44336;
+    color: #fff;
+}

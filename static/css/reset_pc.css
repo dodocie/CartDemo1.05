@@ -1,0 +1,12 @@
+/*CSS DOCUMENT 初始化*/
+body, header, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input,  textarea, th, td
+{ margin:0; padding:0; list-style:none;}
+ul, ol { list-style:none; }
+a { text-decoration:none; outline: none; color: inherit;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-weight: normal;}
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-spacing:0; }
+body{
+    font-family: "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
