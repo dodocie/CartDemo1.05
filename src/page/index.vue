@@ -24,7 +24,7 @@
                     <!--v-bind:class="{'checked':item.selected}"-->
                 </li>
                 <li>
-                    <img src="" :src="item.productImg" alt="">
+                    <img src="" :src="imgSrc(item, index)" alt="">
                     <blockquote>
                         <p>{{item.productName}}</p>
                         <span>{{item.productDescription}}</span>
@@ -167,7 +167,6 @@
                 'productStorage'     : 50,
                 'counter'            : 1,
                 'checked'            : false,
-                'productImg'         : require('../static/images/1.jpg')
               },
               {
                 'productName'        : '新玉润保湿化妆水',
@@ -177,7 +176,6 @@
                 'productStorage'     : 50,
                 'counter'            : 1,
                 'checked'            : false,
-                'productImg'         : require('../static/images/2.jpg')
               },
               {
                 'productName'        : '新玉润保湿凝露',
@@ -187,7 +185,6 @@
                 'productStorage'     : 50,
                 'counter'            : 1,
                 'checked'            : false,
-                'productImg'         : require('../static/images/3.jpg')
               }
             ]
           }
@@ -208,7 +205,15 @@
           }
         }
       },
-
+     imgSrc:function (item, i) {
+        if (typeof item.imgUrl == 'undefined') {
+          item.imgUrl = require('../static/images/' + (i+1) + '.jpg');
+          this.$set(item, 'imgUrl', item.imgUrl)
+        } else {
+          console.log('aaa');
+        }
+        return item.imgUrl;
+      },
       deleteConfirm : function(item) {
         this.deleteFlag     = true
         this.currentProduct = item
