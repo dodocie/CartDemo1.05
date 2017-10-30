@@ -224,7 +224,7 @@
         if (fn > 0) {
           console.log('跳转成功')
           this.isActive = false
-          href          = 'address.html'
+          href          = 'address'
         } else {
           this.isActive = true
           href          = 'javascript:void(0)'
