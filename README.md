@@ -12,7 +12,7 @@
 
     2. webpack 只打包在src目录下的static文件夹下的，并且有被引用的图片吗？
 
-    3. js 图片，只能采用require('/xx/xxx.jpg')或者import的写法吗？
+    3. js 图片，只能采用require('/xx/xxx.jpg')或者import的写法吗？
 
 接下来计划：
 
