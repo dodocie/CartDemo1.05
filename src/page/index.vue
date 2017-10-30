@@ -153,6 +153,9 @@
     methods : {
       getData      : function() {
         var _this = this
+        for(let i=1; i<4; i++){
+					var imgSrc = require('../static/images/' + i + '.jpg')
+				}
         let _data = {
           'status'  : 1,
           'message' : 'success',
@@ -167,7 +170,7 @@
                 'productStorage'     : 50,
                 'counter'            : 1,
                 'checked'            : false,
-                'productImg'         : '/static/images/1.jpg'
+                'productImg'         : imgSrc
               },
               {
                 'productName'        : '新玉润保湿化妆水',
@@ -177,7 +180,7 @@
                 'productStorage'     : 50,
                 'counter'            : 1,
                 'checked'            : false,
-                'productImg'         : '/static/images/2.jpg'
+                'productImg'         : imgSrc
               },
               {
                 'productName'        : '新玉润保湿凝露',
@@ -187,7 +190,7 @@
                 'productStorage'     : 50,
                 'counter'            : 1,
                 'checked'            : false,
-                'productImg'         : '/static/images/3.jpg'
+                'productImg'         : imgSrc
               }
             ]
           }
