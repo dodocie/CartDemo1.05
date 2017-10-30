@@ -153,9 +153,6 @@
     methods : {
       getData      : function() {
         var _this = this
-        for(let i=1; i<4; i++){
-					var imgSrc = require('../static/images/' + i + '.jpg')
-				}
         let _data = {
           'status'  : 1,
           'message' : 'success',
