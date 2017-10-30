@@ -170,7 +170,7 @@
                 'productStorage'     : 50,
                 'counter'            : 1,
                 'checked'            : false,
-                'productImg'         : imgSrc
+                'productImg'         : require('../static/images/1.jpg')
               },
               {
                 'productName'        : '新玉润保湿化妆水',
@@ -180,7 +180,7 @@
                 'productStorage'     : 50,
                 'counter'            : 1,
                 'checked'            : false,
-                'productImg'         : imgSrc
+                'productImg'         : require('../static/images/2.jpg')
               },
               {
                 'productName'        : '新玉润保湿凝露',
@@ -190,7 +190,7 @@
                 'productStorage'     : 50,
                 'counter'            : 1,
                 'checked'            : false,
-                'productImg'         : imgSrc
+                'productImg'         : require('../static/images/3.jpg')
               }
             ]
           }
