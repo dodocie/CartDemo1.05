@@ -24,7 +24,7 @@
                     <!--v-bind:class="{'checked':item.selected}"-->
                 </li>
                 <li>
-                    <img src="" :src="imgSrc(item, index)" alt="">
+                    <img src="" :src="imgSrc(index)" alt="">
                     <blockquote>
                         <p>{{item.productName}}</p>
                         <span>{{item.productDescription}}</span>
@@ -205,14 +205,9 @@
           }
         }
       },
-     imgSrc:function (item, i) {
-        if (typeof item.imgUrl == 'undefined') {
-          item.imgUrl = require('../static/images/' + (i+1) + '.jpg');
-          this.$set(item, 'imgUrl', item.imgUrl)
-        } else {
-          console.log('aaa');
-        }
-        return item.imgUrl;
+      imgSrc: function (i) {
+        var imgUrl = require('../static/images/' + (i+1) + '.jpg');
+        return imgUrl
       },
       deleteConfirm : function(item) {
         this.deleteFlag     = true
