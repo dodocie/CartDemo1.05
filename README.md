@@ -8,11 +8,11 @@
 
 待解决的问题（已解决）：
 
-    1. js导入图片路径
+    1. js导入图片的路径
 
-    2. webpack 只打包在src目录下的static文件夹下的，并且有被引用的图片吗？
+    2. webpack 只打包在src目录下的static文件夹下的，并且有被引用的图片吗？（貌似是的）
 
-    3. js 图片，只能采用require('/xx/xxx.jpg')或者import的写法吗？
+    3. js 图片，只能采用require('/xx/xxx.jpg')或者import的写法吗？（是的）
 
 接下来计划：
 
