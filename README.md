@@ -14,7 +14,7 @@
 
     3. js 生成地址的图片，只能采用require('/xx/xxx.jpg')或者import的写法吗？（是的）
 
-    4. 学习计划：router/component/mixins
+    4. 学习计划：mixins/理解部署生产环境
 
 Demo扩展计划：
 
